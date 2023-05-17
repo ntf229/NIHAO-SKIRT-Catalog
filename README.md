@@ -2,11 +2,11 @@
 
 The following data product has free model parameters of $f_{\rm dust}=0.1$ and $\tau_{\rm clear}=2.5$ Myrs.
 
-### Link to [data product](https://drive.google.com/drive/folders/1eDouinsNBrEwPaQjvM7gVHa8kFe1rNGs?usp=share_link)
+## Link to [data product](https://drive.google.com/drive/folders/1eDouinsNBrEwPaQjvM7gVHa8kFe1rNGs?usp=share_link)
 
-The two analysis files in this repository show how to load the and interpret the data. A brief summary is given below. 
+The two analysis files in this repository show how to load the and interpret the data. A brief summary of the data is given below. 
 
-Spatially integrated data: nihao-integrated-seds.fits 
+### Spatially integrated data: nihao-integrated-seds.fits 
   * ext='GALAXIES': one entry per galaxy (65 total) 
     * ['name'] = Name of the NIHAO galaxy 
     * ['stellar_mass'] = Stellar mass in $M_{\odot}$ 
@@ -37,7 +37,7 @@ Spatially integrated data: nihao-integrated-seds.fits
   * ext='ATTENUATION_WAVE': Wavelengths of 'ATTENUATION_MAGS' in Å (single array) 
   * ext='ATTENUATION_MAGS': Attenuation curves in magnitudes with wavelengths given by 'ATTENUATION_WAVE' 
     
-Spatially resolved data: ResolvedData/[name]_nihao-resolved-photometry.fits (65 files)
+### Spatially resolved data: ResolvedData/[name]_nihao-resolved-photometry.fits (65 files)
   * ext='GALAXIES': one entry per file
     * ['name'] = Name of the NIHAO galaxy 
     * ['stellar_mass'] = Stellar mass in $M_{\odot}$ 
