@@ -8,7 +8,7 @@ Spatially integrated data: nihao-integrated-seds.fits
   * ext='GALAXIES': one entry per galaxy (65 total) 
     * ['name'] = Name of the NIHAO galaxy 
     * ['stellar_mass'] = Stellar mass in $M_{\odot}$ 
-    * ['sfr'] = Star formation rate in $M_{\odot} / \rm year$ 
+    * ['sfr'] = Star formation rate in $M_{\odot}\ /\ \rm year$ 
     * ['sfh'] = Star formation history in $M_{\odot}$ as a function of age (['ages']) 
     * ['ceh'] = Chemical evolution hisotry in $M_{\odot}$ as a function of age (['ages']) and metallicity (['metals']) 
     * ['ages'] = Age bins in years corresponding to ['sfh'] and ['ceh'] 
