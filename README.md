@@ -8,7 +8,7 @@ Spatially integrated data: nihao-integrated-seds.fits
   * ext='GALAXIES': one entry per galaxy (65 total) 
     * ['name'] = Name of the NIHAO galaxy 
     * ['stellar_mass'] = Stellar mass in $M_{\odot}$ 
-    * ['sfr'] = Star formation rate in $M_{\odot}\,/\,\rm year$ 
+    * ['sfr'] = Star formation rate in $M_{\odot} / \rm year$ 
     * ['sfh'] = Star formation history in $M_{\odot}$ as a function of age (['ages']) 
     * ['ceh'] = Chemical evolution hisotry in $M_{\odot}$ as a function of age (['ages']) and metallicity (['metals']) 
     * ['ages'] = Age bins in years corresponding to ['sfh'] and ['ceh'] 
@@ -29,10 +29,10 @@ Spatially integrated data: nihao-integrated-seds.fits
     * ['flux'] = Flux of broadband photometric bandpass ['bands'] in Jansky 
     * ['flux_nodust'] = Dust-free flux of broadband photometric bandpass ['bands'] in Jansky 
     * ['size'] = Side length of modelled the cube in pcs 
-  * ext='WAVE': Wavelengths of 'SPEC' and 'SPECNODUST' in \AA (single array) 
+  * ext='WAVE': Wavelengths of 'SPEC' and 'SPECNODUST' in Å (single array) 
   * ext='SPEC': Spectra in Jansky with wavelengths given by 'WAVE' (one array per orientation; 650 total) 
   * ext='SPECNODUST': Dust-free spectra in Jansky with wavelengths given by 'WAVE' (one array per orientation; 650 total) 
-  * ext='ATTENUATION_WAVE': Wavelengths of 'ATTENUATION_MAGS' in \AA (single array) 
+  * ext='ATTENUATION_WAVE': Wavelengths of 'ATTENUATION_MAGS' in Å (single array) 
   * ext='ATTENUATION_MAGS': Attenuation curves in magnitudes with wavelengths given by 'ATTENUATION_WAVE' 
     
 Spatially resolved data: ResolvedData/[name]_nihao-resolved-photometry.fits where [name] is replaced with each galaxy name 
