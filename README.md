@@ -19,12 +19,12 @@ Spatially integrated data: nihao-integrated-seds.fits
   * ext='SUMMARY': one per orientation (650 total) 
     * ['name'] = Name of the NIHAO galaxy 
     * ['stellar_mass'] = Stellar mass in $M_{\odot}$ 
-    * ['sfr'] = Star formation rate in $M_{\odot}\,/\,\rm year$ 
+    * ['sfr'] = Star formation rate in $M_{\odot}\ /\ \rm year$ 
     * ['dust_mass'] = Dust mass in $M_{\odot}$ 
     * ['axis_ratio'] = Axis ratios (b/a) 
     * ['Av'] = Attenuation in the v-band in magnitudes 
-    * ['attenuated_energy'] = Energy attenuated by dust in $10^{-23}\,erg\,s^{-1}\,cm^{-2}$ 
-    * ['emitted_energy'] = Energy emitted by dust in $10^{-23}\,erg\,s^{-1}\,cm^{-2}$ 
+    * ['attenuated_energy'] = Energy attenuated by dust in $10^{-23}\ erg\ s^{-1}\ cm^{-2}$ 
+    * ['emitted_energy'] = Energy emitted by dust in $10^{-23}\ erg\ s^{-1}\ cm^{-2}$ 
     * ['bands'] = Name of broadband photometric bandpass  
     * ['flux'] = Flux of broadband photometric bandpass ['bands'] in Jansky 
     * ['flux_nodust'] = Dust-free flux of broadband photometric bandpass ['bands'] in Jansky 
@@ -39,7 +39,7 @@ Spatially resolved data: ResolvedData/[name]_nihao-resolved-photometry.fits wher
   * ext='GALAXIES': one entry per galaxy (65 total) 
     * ['name'] = Name of the NIHAO galaxy 
     * ['stellar_mass'] = Stellar mass in $M_{\odot}$ 
-    * ['sfr'] = Star formation rate in $M_{\odot}\,/\,\rm year$ 
+    * ['sfr'] = Star formation rate in $M_{\odot}\ /\ \rm year$ 
     * ['sfh'] = Star formation history in $M_{\odot}$ as a function of age (['ages']) 
     * ['ceh'] = Chemical evolution hisotry in $M_{\odot}$ as a function of age (['ages']) and metallicity (['metals']) 
     * ['ages'] = Age bins in years corresponding to ['sfh'] and ['ceh'] 
@@ -50,7 +50,7 @@ Spatially resolved data: ResolvedData/[name]_nihao-resolved-photometry.fits wher
   * ext = 'SUMMARY': one per orientation (650 total) 
     * ['name'] = Name of the NIHAO galaxy 
     * ['stellar_mass'] = Stellar mass in $M_{\odot}$ 
-    * ['sfr'] = Star formation rate in $M_{\odot}\,/\,\rm year$ 
+    * ['sfr'] = Star formation rate in $M_{\odot}\ /\ \rm year$ 
     * ['dust_mass'] = Dust mass in $M_{\odot}$ 
     * ['axis_ratio'] = Axis ratios (b/a) 
     * ['Av'] = Attenuation in the v-band in magnitudes 
