@@ -2,7 +2,7 @@
 
 ### Link to [data product](https://drive.google.com/drive/folders/1eDouinsNBrEwPaQjvM7gVHa8kFe1rNGs?usp=share_link)
 
-The two analysis files in this repository show how to load the and interpret the data. A brief summary is given below. \\
+The two analysis files in this repository show how to load the and interpret the data. A brief summary is given below. \
 
 Spatially integrated data: nihao-integrated-seds.fits \
   ext='GALAXIES': one entry per galaxy (65 total) \
@@ -33,7 +33,7 @@ ext='WAVE': Wavelengths of 'SPEC' and 'SPECNODUST' in $\AA$ (single array) \
 ext='SPEC': Spectra in Jansky with wavelengths given by 'WAVE' (one array per orientation; 650 total) \
 ext='SPECNODUST': Dust-free spectra in Jansky with wavelengths given by 'WAVE' (one array per orientation; 650 total) \
 ext='ATTENUATION_WAVE': Wavelengths of 'ATTENUATION_MAGS' in $\AA$ (single array) \
-ext='ATTENUATION_MAGS': Attenuation curves in magnitudes with wavelengths given by 'ATTENUATION_WAVE' \\
+ext='ATTENUATION_MAGS': Attenuation curves in magnitudes with wavelengths given by 'ATTENUATION_WAVE' \
     
 Spatially resolved data: ResolvedData/[name]_nihao-resolved-photometry.fits where [name] is replaced with each galaxy name \
   ext='GALAXIES': one entry per galaxy (65 total) \
