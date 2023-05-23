@@ -42,9 +42,9 @@ def makeImages(galaxy):
         ax = plt.Axes(fig, [0., 0., 1., 1.])
         ax.set_axis_off()
         fig.add_axes(ax)
-        red = (image_r*0.70+image_w4*0.3)/np.amax(image_r*0.70+image_w4*0.3)
-        green = image_g/np.amax(image_g)*0.75
-        blue = (image_b*0.70+image_fuv*0.3)/np.amax(image_b*0.70+image_fuv*0.3)
+        red = (image_r*0.8+image_w4*0.2)/np.amax(image_r*0.8+image_w4*0.2)
+        green = image_g/np.amax(image_g)*0.8
+        blue = ((image_b*0.9image_fuv*0.1)/np.amax(image_b*0.9+image_fuv*0.1))*0.8
         image = np.transpose(np.asarray([red,green,blue]))
         ax.imshow(image, interpolation='none')
         plt.savefig('compositeImages/'+galaxy+'/axisRatio'+str(axisRatios[i])+'.png', dpi=sizes[0])
