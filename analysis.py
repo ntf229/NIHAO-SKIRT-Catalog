@@ -484,7 +484,7 @@ def plotCEH(galaxy):
 	weights = CEH[nameMask, :, :][0]
 	ageBins /= 1e9 # convert to Gyrs
 	plt.hist2d(ageBins.flatten(), metalBins.flatten(), bins=[ageBins[0,:],metalBins[:,0]], 
-			   weights=weights.flatten(), cmap='Greys')
+			   weights=weights.flatten(order='F'), cmap='Greys')
 	plt.xlabel(r'$Age \, [Gyrs]$', fontsize=28)
 	plt.ylabel(r'$Metallicity$',fontsize=28)
 	plt.xticks(fontsize=28)
