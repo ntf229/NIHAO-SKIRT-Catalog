@@ -465,7 +465,9 @@ def plotSFH(galaxy):
 	bins = ages[nameMask, :][0]
 	weights = SFH[nameMask, :][0]
 	bins /= 1e9 # convert to Gyrs
-	plt.hist(bins, bins=bins, weights=weights)
+	rightEdge = 10**(np.log10(bins[1]) - np.log10(bins[0]) + np.log10(bins[-1]))
+	fullBins = np.append(bins, rightEdge) # includes right-most edge
+	plt.hist(bins, bins=fullBins, weights=weights)
 	plt.xlabel('Age [Gyrs]', fontsize=28)
 	plt.ylabel(r'$Mass \, [M_{\odot}]$',fontsize=28)
 	plt.yscale('log')
@@ -483,7 +485,11 @@ def plotCEH(galaxy):
 	ageBins, metalBins = np.meshgrid(xbins, ybins)
 	weights = CEH[nameMask, :, :][0]
 	ageBins /= 1e9 # convert to Gyrs
-	plt.hist2d(ageBins.flatten(), metalBins.flatten(), bins=[ageBins[0,:],metalBins[:,0]], 
+	ageRightEdge = 10**(np.log10(ageBins[0,1]) - np.log10(ageBins[0,0]) + np.log10(ageBins[0,-1]))
+	ageFullbins = np.append(ageBins[0,:], ageRightEdge) # includes right-most edge
+	metalRightEdge = 10**(np.log10(metalBins[1,0]) - np.log10(metalBins[0,0]) + np.log10(metalBins[-1,0]))
+	metalFullBins = np.append(metalBins[:,0], metalRightEdge) # includes right-most edge
+	plt.hist2d(ageBins.flatten(), metalBins.flatten(), bins=[ageFullbins, metalFullBins], 
 			   weights=weights.flatten(order='F'), cmap='Greys')
 	plt.xlabel(r'$Age \, [Gyrs]$', fontsize=28)
 	plt.ylabel(r'$Metallicity$',fontsize=28)
