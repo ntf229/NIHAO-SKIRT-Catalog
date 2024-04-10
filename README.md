@@ -7,7 +7,7 @@ The following data product has free model parameters of $f_{\rm dust}=0.1$ and $
 
 ## Link to [data product](https://drive.google.com/drive/folders/1eDouinsNBrEwPaQjvM7gVHa8kFe1rNGs?usp=share_link)
 
-The two analysis files in this repository show how to load the and interpret the spatially integrated and resolved data. 
+The two analysis files in this repository, analysis.py and resolved_analysis.py,\\ show how to load the and interpret the spatially integrated and resolved data, respectively.\\ 
 A brief summary of the data is given below. 
 
 ### Spatially integrated data: nihao-integrated-seds.fits 
