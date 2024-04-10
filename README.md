@@ -1,7 +1,7 @@
 # NIHAO-SKIRT-Catalog
 
 This repository provides reference code for analyzing the results of the paper  
-["Panchromatic simulated galaxy observations from the NIHAO project"](https://www.google.com "The Astrophysical Journal")
+["Panchromatic simulated galaxy observations from the NIHAO project"](https://iopscience.iop.org/article/10.3847/1538-4357/acf9f0 "The Astrophysical Journal")
 
 The following data product has free model parameters of $f_{\rm dust}=0.1$ and $\tau_{\rm clear}=2.5$ Myrs.
 
